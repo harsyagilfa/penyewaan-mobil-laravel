@@ -1,0 +1,44 @@
+.custom-switch .custom-control-input {
+    display: none; /* Sembunyikan checkbox asli */
+}
+
+.custom-switch .custom-control-label {
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.custom-switch .custom-control-label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-switch .custom-control-label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #28a745;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(20px);
+}

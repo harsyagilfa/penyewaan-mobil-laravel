@@ -1,0 +1,91 @@
+:root {
+    --bg-color: #dfdcdc;
+    --second-bg-color: #2e2e2e;
+    --text-color: #ffffff;
+    --main-color: #035e75;
+    --main-color2: #00066e;
+    --main-color3: #02c8b7;
+    --main-color4: #ff9800;
+    --main-color5: #dc3545;
+    --main-color6 : #28a745;
+  }
+  .modal {
+    display: flex; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: var(--main-color3); /* White background */
+    margin: 15% auto; /* 15% from top and centered */
+    padding: 20px;
+    border: 1px solid var(--main-color2);
+    width: 50%; /* Set width of the modal */
+    max-width: 500px; /* Max width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    text-align: center; /* Centered text */
+}
+
+/* Modal body to center content */
+.modal-body {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 150px; /* Minimum height to ensure vertical centering */
+    margin-top: 50px;
+}
+
+/* Modal header */
+.modal-header {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 25px;
+
+}
+
+/* Font Awesome icon */
+.modal-header i {
+    font-size: 100px; /* Larger icon */
+    color: var(--main-color2); /* Green color */
+    margin-bottom: 10px; /* Space between icon and heading */
+    align-items: center;
+}
+
+/* Modal heading */
+.modal-header h2 {
+    font-size: 2.5rem; /* Heading font size */
+    margin: 0; /* Remove margin */
+    color: var(--text-color); /* Dark text color */
+}
+.modal-body p{
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Modal close button */
+.close {
+    color: var(--main-color);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}

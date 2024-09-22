@@ -1,0 +1,154 @@
+:root {
+    --bg-color: #dfdcdc;
+    --second-bg-color: #2e2e2e;
+    --text-color: #ffffff;
+    --main-color: #035e75;
+    --main-color2: #00066e;
+    --main-color3: #02c8b7;
+    --main-color4: #ff9800;
+    --main-color5: #dc3545;
+    --main-color6 : #28a745;
+    --main-color7 : #007bff;
+  }
+/* customer/profil */
+.customer-profile {
+    max-width: 800px;
+    max-height: 100px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-picture {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid var(--main-color3);
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-color);
+  }
+
+  .profile-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+
+  .profile-info strong {
+    color: var(--text-color);
+  }
+
+  /* Styling untuk tombol aksi */
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn-edit, .btn-change-password {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .btn-edit {
+    background-color: #28a745;
+  }
+
+  .btn-change-password {
+    background-color: #dc3545;
+  }
+
+  .btn-edit:hover, .btn-change-password:hover {
+    background-color: #0056b3;
+  }
+
+  .btn-edit:hover {
+    background-color: #218838;
+  }
+
+  .btn-change-password:hover {
+    background-color: #c82333;
+  }
+/* Responsive Styles for smaller devices */
+@media (max-width: 768px) {
+    /* Profile header for mobile */
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .profile-info h1 {
+        font-size: 20px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
+
+    .profile-picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Action buttons alignment for mobile */
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller font and image size for very small devices */
+    .profile-info h1 {
+        font-size: 18px;
+    }
+
+    .profile-info p {
+        font-size: 12px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-actions .btn-edit,
+    .profile-actions .btn-change-password {
+        font-size: 14px;
+    }
+}

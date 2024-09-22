@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #dfdcdc;
+    --second-bg-color: #2e2e2e;
+    --text-color: #ffffff;
+    --main-color: #035e75;
+    --main-color2: #00066e;
+    --main-color3: #02c8b7;
+    --main-color4: #ff9800;
+    --main-color5: #dc3545;
+    --main-color6 : #28a745;
+    --main-color7 : #007bff;
+  }
+/* customer/layanan */
+  .layanan .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.layanan h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.layanan .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.layanan .card {
+    background: linear-gradient(100deg, var(--main-color), var(--main-color2));
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+.layanan .card:hover {
+    transform: translateY(-5px);
+}
+.layanan .card-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.layanan .card-body {
+    padding: 15px;
+    text-align: center;
+}
+.layanan .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.layanan .card-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.layanan .btn-detail,
+.layanan .btn-tersedia {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.layanan .btn-kosong {
+    display: inline-block;
+    background-color: var(--main-color4);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.layanan .btn-detail:hover,
+.layanan .btn-tersedia:hover {
+    background-color: var(--main-color2);
+    box-shadow: 0 0 3rem var(--main-color3);
+}
+@media (max-width: 991px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-basis: 48%;
+        margin: 10px 0;
+    }
+}
+/* Responsif untuk mobile */
+@media (max-width: 575px) {
+    .card {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .btn-detail, .btn-tersedia, .btn-kosong {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

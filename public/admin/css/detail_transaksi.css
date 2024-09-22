@@ -1,0 +1,48 @@
+.card-header {
+    background-color: #343a40;
+    color: white;
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
+
+  .card-body dl dt {
+    font-weight: bold;
+  }
+
+  .card-body dl dd {
+    margin-bottom: 10px;
+  }
+
+  .card-footer h4 {
+    margin-top: 20px;
+  }
+
+  .img-fluid {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-control-label {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+
+  .btn-success {
+    display: block;
+    width: 50%;
+    font-size: 16px;
+  }
+  .btn-info {
+    display: block;
+    width: 50%;
+    font-size: 16px;
+  }
+  .btn-secondary {
+    display: block;
+    width: 50%;
+    font-size: 16px;
+  }

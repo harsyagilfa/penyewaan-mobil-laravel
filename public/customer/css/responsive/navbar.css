@@ -1,0 +1,57 @@
+@media (max-width: 821px) {
+    section {
+        min-height: 100vh;
+        padding: 10rem 5% 2rem;
+    }
+    #menu-icon {
+      display: block;
+    }
+    .menu {
+      position: absolute;
+      list-style: none;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 3rem 3%;
+      background: linear-gradient(100deg, var(--main-color), var(--main-color2));
+      display: none;
+      transition: 0.5s;
+    }
+    .menu.active {
+      display: block;
+      size: 5rem;
+    }
+    .menu ul {
+      margin-top: -7rem;
+      margin-left: 12rem;
+      font-size: 0.5rem;
+    }
+    .menu li {
+      margin-top: 10rem;
+      font-size: 0.5rem;
+    }
+
+    .menu a {
+      display: block;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+  }
+  @media (max-width: 617px) {
+    html{
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 520px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  @media (max-width: 365px) {
+  html{
+    font-size: 35%;
+  }
+
+
+  }
